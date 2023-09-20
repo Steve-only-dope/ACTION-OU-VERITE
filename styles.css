@@ -1,4 +1,27 @@
-body {
+/* Styles pour le titre et le sous-titre */
+.title {
+    font-size: 36px;
+    color: #3498db;
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+.subtitle {
+    font-size: 24px;
+    color: #e74c3c;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+/* Style pour la description */
+.description {
+    font-size: 18px;
+    line-height: 1.5;
+    margin-bottom: 20px;
+    text-align: center;
+    color: #333;
+}
+ {
     font-family: Arial, sans-serif;
     text-align: center;
     background-color: #233546; 
