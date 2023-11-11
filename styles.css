@@ -1,70 +1,62 @@
-
     body {
-    font-family: Arial, sans-serif;
-    text-align: center;
-    background-color: #233546; 
-    /* background-image: url("1.jpg"); */
-    margin: 0;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    min-height: 100vh;
-}
-
-
-.container {
-    padding: 20px;
-    background-color: #ffffffc2;
-    border-radius: 20px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
-}
-.container1{
-    background-color: #ffffffc2;
-    border: 15px;
-}
-button {
-    padding: 10px 20px;
-    font-size: 18px;
-    margin: 10px;
-    border: none;
-    background-color: #3498db;
-    color: #ffffff;
-    border-radius: 5px;
-    cursor: pointer;
-    transition: background-color 0.7s ease;
-}
-
-button:hover {
-    background-color: #154b7f;
-}
-
-#result {
-    font-size: 24px;
-    font-weight: bold;
-    margin-top: 20px;
-    color: #e74c3c;
-    animation: fade-in 2s ease;
-}
-
-@keyframes fade-in {
-    from {
-        opacity: 0;
+      font-family: Arial, sans-serif;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      margin: 0;
+      background-color: #ffbe95;
     }
-    to {
-        opacity: 1;
+
+    .game {
+      text-align: center;
     }
-}
-.menu{
-    /* min-height: 100vh;
-     min-right: 100vh;
-     width: 100px;
-    height: 100px; */
-}
-.s{
-    color: red;
-    text-decoration: none;
-}
-img {
-    width: 100px;
-    height: 100px;
-}
+
+    .scores {
+      margin-bottom: 20px;
+      font-size: 24px;
+      background-color: #ffffff;
+      border-radius: 5px;
+      font-weight: bold;
+      border: 2px solid #ff7455;
+      box-shadow: 5 0 10px rgba(0, 0, 0, 0.1);
+    }
+
+    .grid {
+      width: 325px;
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 5px;
+      background-color: orange;
+      padding: 5px;
+      border-radius: 5px;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    }
+
+    .cell {
+      width: 100px;
+      height: 100px;
+      border: 2px solid #ff7455;
+      font-size: 60px;
+      cursor: pointer;
+      transition: all 0.3s ease-in-out;
+      background-color: #ecf0f1;
+      color: purple;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+
+    .cell:hover {
+      background-color: white;
+      color: #fff;
+    }
+
+    /* Styles pour les emojis X et O */
+    .cell.x {
+      color: blue;
+    }
+
+    .cell.o {
+      color: red;
+    }
